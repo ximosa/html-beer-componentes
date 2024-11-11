@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+<link href="https://cdn.jsdelivr.net/npm/beercss@3.7.12/dist/cdn/beer.min.css" rel="stylesheet">
+<script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.7.12/dist/cdn/beer.min.js"></script>
+    <script src="./components.js" defer></script>
+<script src="./color.js"></script>
+</head>
+<body>
+<custom-header></custom-header>
+<div class="large-text large-padding center-align" style="max-width: 800px;margin: auto;"> <a href="./categorias">Categorias</a></div>
+   <main id="app" style="max-width: 800px;margin: auto;">
+    <h1>Blog</h1>
+<p>Cargando artículos...</p><progress class="circle large"></progress>
+  <div> <a href="./categorias">categorias</a></div>
+</main>
+ <custom-footer></custom-footer>
+  <script type="module" src="./blog.js"></script>
+<script type="module">
+    import { Blog } from './blog.js';
+    document.addEventListener('DOMContentLoaded', () => {
+      Blog();
+    });
+  </script>
+</body>
+</html>
